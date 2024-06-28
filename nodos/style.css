@@ -1,0 +1,43 @@
+.box {
+    width: 100%; /* Asegura que las tarjetas ocupen todo el ancho de su contenedor */
+    height: 250px; /* Altura fija para todas las tarjetas */
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 160px;
+    width: 360px;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgb(10, 10, 10);
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.box h1,
+.box p {
+    margin: 4px 0;
+    width: 100%;
+}
+
+.otra_clase {
+  
+    justify-content: center;
+    flex-direction: column;
+}
+
+#root {
+    margin: 16px; /* Añadir margen al contenedor principal */
+    display: flex;
+    
+      display: grid;
+    grid-template-columns: repeat(2, 50vh);
+    gap: 16px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+
+    
+}

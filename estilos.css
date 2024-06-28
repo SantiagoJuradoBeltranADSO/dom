@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* custom properties */
+:root{
+  --tuliptree: #E6C73C;
+  --oldgold: #6e5d1a;
+  --mineshaft:#2B2B2B;
+  --coconutcream:#FBFBE9;
+  --white:#fff;
+  --max-width:1400px;
+  --padding: 8px;
+  --margin:10px;
+  --border-radius:8px;
+  --transition:1s;
+  --font-size:16px;
+}
+::selection{
+  background-color: var(--tuliptree);
+  color: var(--mineshaft);
+}
+body{
+  background:var(--mineshaft) ;
+  color: var(--white);
+  font-size: var(--font-size);
+    font-family: "Montserrat", sans-serif;
+    line-height: 24px;
+}
+header{
+  text-align: center;
+  border-bottom: solid 1px var(--tuliptree) ;
+  padding: var(--padding);
+  margin-bottom:var(--margin);
+}
+section{
+  padding: var(--padding);
+}
+a{
+  color: var(--tuliptree);
+  text-decoration: none;
+}
+h1 , h2{
+padding: var(--padding);
+}
+p{
+  font-size: 1rem;
+  margin: 0 0 var(--margin);
+  color: var(--white);
+}
+p::first-letter{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--oldgold);
+}
+
+ul,.list >li.item{
+  color: var(--oldgold);
+  list-style: none;
+  cursor: pointer; 
+
+}
+li.item:hover a{
+  color: var(--mineshaft);
+}
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+/* shear */
+.search{
+  display: flex;
+  justify-content: end;
+  
+}
+.search__form{
+  display: inline-grid;
+  justify-content: end;
+  grid-template-columns:auto 40px;
+  grid-template-rows: auto;
+  gap: 4px;
+  border: solid 3px var(--tuliptree);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--margin);
+  padding: var(--padding);  
+}
+.input{
+  width: 100%;
+  padding: var(--padding);
+  outline: none;
+  border: solid 1px var(--tuliptree);
+  font-size: 1rem;
+  color: var(--mineshaft);
+
+}
+
+.card{
+  width:450px;
+  border: solid 1px var(--tuliptree);
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  display: grid;
+  
+}
+.card__header{
+  padding: var(--padding);
+}
+.card__title{
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+.card__body{
+padding: var(--padding);
+}
+.card__img{
+width: 100%;
+}
+.card__paragraph{
+  padding: var(--padding);
+}
+
+.button{
+background: var(--tuliptree);
+color: var(--mineshaft);
+border: 2px var(--white);
+border-radius:var(--border-radius);
+font-size: .9rem;
+font-weight: 500;
+display: inline-flex;
+justify-content: space-between;
+padding: var(--padding);
+transition: var(--transition);
+}
+.button--icon{
+  justify-content: center;
+  align-items: center;
+}
+.button__icon{
+  font-size: 1.4rem;
+  
+}
+.button__outline{
+background: var(--mineshaft);
+color: var(--oldgold);
+}
+.button:hover{
+  background-color:var(--mineshaft);
+  color: var(--tuliptree);
+}
+.button__outline:hover{
+background-color:var(--mineshaft);
+  color: var(--tuliptree);
+}
+.list{
+  text-align: center;
+  padding: var(--padding);
+}
+.list__item{
+  border-bottom: solid 1px var(--oldgold);
+  padding:var(--padding);
+  transition: var(--transition);
+  font-size: 1.2rem;
+}
+ul.list>li.list__item:last-child{
+  border-bottom: none;
+}
+.list__item:hover{
+background: var(--oldgold);
+}
+div.card>ul.list>.list__item>a:visited{
+ color:var(--oldgold);
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ gap: 1rem;
+}
